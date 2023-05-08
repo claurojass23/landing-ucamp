@@ -1,0 +1,291 @@
+ *{
+   margin: 0;
+  font-family: 'Lexend', sans-serif;
+}
+
+body{
+  background-color: #efefef;
+}
+
+header{
+  display: flex;
+  height: 50px;
+  width: 100%;
+  background-color: rgba(228, 26, 12, 0.788);
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.prisma{
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+}
+
+.prisma img {
+   height: 50px;
+}
+
+.prisma h2{
+ height: 30px ;
+}
+
+nav a{
+ text-decoration: none;
+ color: black;
+ font-weight: 600;
+ padding-right: 30px;
+}
+
+nav a:hover{
+ color:  aliceblue;
+}
+
+
+/* jumbotron*/
+
+main{
+  display: flex;
+  margin-top: 100px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+#main2{
+  width: 500px;
+  height: 400px;
+  padding-left: 15px;
+}
+
+#main1{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main h3{
+ font-size: 70px;
+ color: rgba(235, 57, 57, 0.808);  
+}
+
+main p{
+ font-weight: 600;
+ padding-top: 30px;
+ padding-bottom: 30px;
+}
+
+.sub-1-m{
+  display: flex;
+}
+
+#correo{
+ padding: 8px;
+}
+
+#button{
+  background-color: rgba(233, 56, 12, 0.329);
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/*blog*/
+
+#titulo-blog{
+ text-align: center;
+ margin-top: 200px;
+ font-size: 30px;
+}
+
+.img1{
+  height: 300px;
+  width: 300px;
+}
+ 
+
+article{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 60px;
+}
+
+#sub1{
+  background-color:rgba(44, 41, 228, 0.342) ;
+  width: 305px;
+}
+
+#sub2{
+  background-color: rgba(236, 57, 57, 0.336) ;
+  width: 305px;
+}
+
+#sub3{
+  background-color:rgba(241, 238, 61, 0.479) ;
+  width: 305px;
+}
+
+.container .blog-1{
+  transition:  box-shadow 0.3s ease;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 15px;
+  text-align: start;
+  cursor: pointer;
+}
+
+.blog-1:hover{
+  box-shadow: 0 0.1rem 0.4rem rgba(0,0,0,0.3) ;
+}
+
+article h1{
+  margin-top: 20px;
+}
+
+article p{
+  margin-top: 10px;
+}
+
+/*adicionales*/
+
+aside img{
+  height: 200px;
+  width: 200px;
+}
+
+aside{
+  background-color: rgba(181, 227, 250, 0.171);
+  display: flex;
+  justify-content: space-evenly;
+}
+ 
+#adi-1{
+  position:relative;
+  left: 50px;
+  top: 30px;
+}
+
+#adi-2{
+  position: relative;
+  right: 50px;
+  bottom: 30px;
+}
+
+.adicional-2{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+aside p{
+ font-size: 20px;
+}
+
+aside h2{
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+
+.boton{
+  background-color: rgba(121, 248, 248, 0.459);
+  padding: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/*footer*/
+
+footer img{
+  width: 20px;
+  height: 20px;
+}
+
+footer{
+  margin-top: 50px;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: start;
+}
+
+.lista{
+  margin-left: 60px;
+  list-style: none;
+}
+ 
+.titulo-footer{
+  font-weight: 800;
+}
+
+.seg-footer{
+  margin-top: 15px;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+
+.seg-footer:hover{
+ color: rgb(27, 27, 155);
+}
+
+.img-footer{
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 280px) and (max-width: 600px) {
+  
+  header{
+   height: 130px;
+  }
+  .prisma h2{
+    font-size: 0px ;
+  }  
+
+  header.nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+ 
+  main{
+    display: flex;
+    flex-direction: column;
+  }
+   
+  .sub-1-m{
+    padding-bottom: 15px;
+  }
+
+  #main2{
+    height: 300px;
+  }
+
+  article{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 10px;
+    padding: 25px;
+  }
+    
+  aside{
+   width: 450px;
+  }
+    
+  aside img{
+    width: 100px;
+    height: 100px;
+  }
+  
+  .adicional-2{
+    width: 100px;
+  }
+  
+  footer{
+    display: flex;
+    flex-direction: column;
+  }
+}
+
